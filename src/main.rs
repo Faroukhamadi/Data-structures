@@ -11,6 +11,4 @@ fn main() {
         elem: 2,
         next: Link::More(Box::new(head)),
     };
-    let link = Link::More(Box::new(head));
-    list.head = link;
 }
