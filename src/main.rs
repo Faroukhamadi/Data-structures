@@ -1,14 +1,15 @@
-use std::io::Empty;
+use data_structures::linked_list::List;
 
-use data_structures::linked_list::{Link, List, Node};
 fn main() {
     let mut list = List::new();
-    let head = Node {
-        elem: 1,
-        next: Link::Empty,
-    };
-    let second = Node {
-        elem: 2,
-        next: Link::More(Box::new(head)),
-    };
+
+    list.push(13);
+    list.push(14);
+    list.push(15);
+    list.push(16);
+    list.push(17);
+
+    println!("{:#?}", list);
+
+    list.pop();
 }
